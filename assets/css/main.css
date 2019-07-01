@@ -331,10 +331,7 @@ header #icons a:hover {
 }
 
 footer {
-  visibility: hidden;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  margin: 0 -4rem;
   background: #2b2b2b;
   display: -webkit-box;
   display: -ms-flexbox;
