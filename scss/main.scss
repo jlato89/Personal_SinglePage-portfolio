@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+@import 'config';
+
+//* GLOBALS
+* {
+   box-sizing: border-box;
+}
+body {
+   background: $primary-color;
+   color: set-text-color($primary-color);
+   height: 100%;
+   margin: 0;
+   font-family: 'Bree Serif', serif;
+   line-height: 1.5;
+}
+
+main {
+   padding: 2rem 4rem;
+}
+
+h1,
+h2,
+h3 {
+   margin: 0;
+   font-weight: 300;
+
+   &.lg-heading {
+      font-size: 5rem;
+   }
+   &.sm-heading {
+      background: rgba(lighten($primary-color, 2), 0.5);
+      font-size: 1.3em;
+      // width: fit-content; //! trying out background appearance
+      padding: 0.2rem 1rem;
+      margin-bottom: 2rem;
+   }
+}
+
+.text-secondary {
+   color: $secondary-color;
+}
+
+section {
+   margin: 5vh 0;
+   border-top: 3px solid green;
+}
+
+.section-header {
+   text-align: center;
+
+   .lg-heading {
+      font-size: 4rem;
+   }
+}
+
+#bg-img {
+   @include background;
+}
+
+//* HEADER
+header {
+   background: grey;
+   display: flex;
+   position: fixed;
+   top: 0;
+   height: 35px;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 3;
+
+   div {
+   padding: 0 1rem;
+   }
+   #name {
+      font-size: 1.3rem;
+      font-weight: bold;
+   }
+   #icons a {
+      color: black;
+   }
+}
+
+//* HOME SECTION
+#home-content {
+   height: 100vh;
+}
+
+//* About Section
+#about-content {
+   display: grid;
+   grid-gap: 30px;
+   grid-template-areas:
+      'bio-img bio bio'
+      'job1 job2 job3';
+   grid-template-columns: repeat(3, 1fr);
+   
+   #bio-img {
+      grid-area: bio-img;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 6px solid $secondary-color;
+      margin: auto;
+   }
+
+   #bio {
+      grid-area: bio;
+   }
+
+   .jobs {
+      background: lighten($primary-color, 5);
+      padding: .5rem;
+      border-bottom: $secondary-color 5px solid;
+   }
+
+   #job1 {grid-area: job1;}
+   #job2 {grid-area: job2;}
+   #job3 {grid-area: job3;}
+}
+
+//*   MY WORK SECTION
+#work-content {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 0.6rem;
+
+   .item {
+   position: relative;
+   }
+
+   .overlay-text {
+      background: #444;
+      position: absolute;
+      font-family: sans-serif;
+      color: white;
+      text-align: center;
+      width: 98%;
+      bottom: 40%;
+      left: 2px;
+      opacity: 0.7;
+      padding: 0.5rem 0;
+      z-index: 2;
+   }
+
+   img {
+      width: 100%;
+      height: 25vh;
+      border: 3px solid #fff;
+
+      &:hover {
+         opacity: 0.5;
+         border: 3px solid $secondary-color;
+         @include easeOut;
+      }
+   }
+
+   .btn {
+      display: block;
+      text-align: center;
+      padding: 0.3rem 1rem;
+      margin-bottom: 0.3rem;
+
+      &.btn-dark {
+         background: darken($primary-color, 50);
+         color: #fff;
+      }
+      &.btn-light {
+         background: lighten($primary-color, 50);
+         color: #333;
+      }
+
+      &:hover {
+         background: $secondary-color;
+         color: set-text-color($secondary-color);
+      }
+   }
+}
+
+//* CONTACT ME SECTION
+#contact-content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+
+   .box {
+      background: lighten($primary-color, 15);
+      font-size: 1.5rem;
+      height: fit-content;
+      border: 3px solid #fff;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem 1.5rem;
+   }
+
+   //    Contact Form
+   #form {
+      background: lighten($primary-color, 15);
+      width: 600px;
+      height: fit-content;
+      padding: 1.5rem;
+      padding-top: .5rem;
+      margin: 1rem 0;
+
+      h1 {
+         text-align: center;
+         margin-bottom: 10px;
+      }
+      #form-name,
+      #form-email,
+      #form-phone,
+      #form-company {
+         width: 100%;
+         height: 30px;
+         margin-bottom: 10px;
+      }
+               
+      #form-message {
+         width: 100%;
+         height: 20vh;
+         margin-bottom: 5px;
+      }
+   }
+}
