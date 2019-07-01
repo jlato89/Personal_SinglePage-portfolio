@@ -49,7 +49,9 @@ h4,h5,h6 {
 
 .section-header:not(.no-margin) {
    text-align: center;
-   border-top: 3px solid green;
+   border-top: 3px solid darken($primary-color, 3);
+   width: 80%;
+   margin: 0 auto;
    margin-top: 4vh;
 }
 
@@ -72,12 +74,35 @@ header {
    div {
    padding: 0 1rem;
    }
+
    #name {
-      font-size: 1.3rem;
-      font-weight: bold;
+      font-size: 1.4rem;
+      font-family: 'Bree Serif', serif;
+      font-weight: 300;
    }
+
+   // Menus
+   #main-nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      a {
+         margin: 0 10px;
+         text-transform: uppercase;
+
+         &:hover {
+            color: $secondary-color;
+            cursor: pointer;
+            @include easeOut;
+         }
+      }
+   }
+
    #icons a {
-      color: black;
+      color: white;
+      margin: 0 2px;
    }
 }
 
