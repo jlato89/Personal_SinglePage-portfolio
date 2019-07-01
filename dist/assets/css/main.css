@@ -27,7 +27,7 @@ h3 {
 h1.lg-heading,
 h2.lg-heading,
 h3.lg-heading {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 h1.sm-heading,
@@ -44,16 +44,17 @@ h3.sm-heading {
 }
 
 section {
-  margin: 5vh 0;
   border-top: 3px solid green;
+  margin: 5vh 0;
+}
+
+section:first-of-type {
+  margin-top: 0;
+  border: 0;
 }
 
 .section-header {
   text-align: center;
-}
-
-.section-header .lg-heading {
-  font-size: 4rem;
 }
 
 #bg-img#bg-img {
@@ -73,21 +74,20 @@ section {
   height: 100%;
   top: 0;
   right: 0;
-  z-index: -1;
 }
 
 header {
-  background: grey;
+  background: #5e5e5e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   top: 0;
   height: 35px;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -108,7 +108,19 @@ header #icons a {
 }
 
 #home-content {
-  height: 100vh;
+  position: relative;
+  height: 96.6vh;
+  z-index: 1;
+}
+
+#home-content .lg-heading {
+  font-size: 6rem;
+}
+
+#home-content .sm-heading {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #about-content {
@@ -120,7 +132,7 @@ header #icons a {
       grid-template-columns: repeat(3, 1fr);
 }
 
-#about-content #bio-img {
+#about-content #bio-logo {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: bio-img;

@@ -25,7 +25,7 @@ h3 {
    font-weight: 300;
 
    &.lg-heading {
-      font-size: 5rem;
+      font-size: 4rem;
    }
    &.sm-heading {
       background: rgba(lighten($primary-color, 2), 0.5);
@@ -41,16 +41,17 @@ h3 {
 }
 
 section {
-   margin: 5vh 0;
    border-top: 3px solid green;
+   margin: 5vh 0;
+
+   &:first-of-type {
+      margin-top: 0;
+      border: 0;
+   }
 }
 
 .section-header {
    text-align: center;
-
-   .lg-heading {
-      font-size: 4rem;
-   }
 }
 
 #bg-img {
@@ -59,13 +60,13 @@ section {
 
 //* HEADER
 header {
-   background: grey;
+   background: lighten($primary-color, 10);
    display: flex;
+   justify-content: space-between;
    position: fixed;
    top: 0;
    height: 35px;
    width: 100%;
-   justify-content: space-between;
    align-items: center;
    z-index: 3;
 
@@ -83,7 +84,16 @@ header {
 
 //* HOME SECTION
 #home-content {
-   height: 100vh;
+   position: relative;
+   height: 96.6vh;
+   z-index: 1;
+
+   .lg-heading {
+      font-size: 6rem;
+   }
+   .sm-heading {
+      width: fit-content;
+   }
 }
 
 //* About Section
@@ -95,7 +105,7 @@ header {
       'job1 job2 job3';
    grid-template-columns: repeat(3, 1fr);
    
-   #bio-img {
+   #bio-logo {
       grid-area: bio-img;
       width: 200px;
       height: 200px;
