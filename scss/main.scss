@@ -103,6 +103,11 @@ header {
    #icons a {
       color: white;
       margin: 0 2px;
+
+      &:hover {
+         color: $secondary-color;
+         @include easeOut;
+      }
    }
 }
 
