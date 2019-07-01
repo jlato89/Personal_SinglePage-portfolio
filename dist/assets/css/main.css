@@ -43,11 +43,6 @@ h4.sm-heading, h5.sm-heading, h6.sm-heading {
   margin-bottom: 2rem;
 }
 
-h1.job-date, h2.job-date, h3.job-date,
-h4.job-date, h5.job-date, h6.job-date {
-  text-align: center;
-}
-
 .text-secondary {
   color: #eece1a;
 }
@@ -155,6 +150,21 @@ header #icons a {
   background: #515151;
   padding: .5rem;
   border-bottom: #eece1a 5px solid;
+}
+
+#about-content .jobs h3, #about-content .jobs h5, #about-content .jobs h6 {
+  text-align: center;
+}
+
+#about-content .jobs h3 {
+  margin-bottom: 5px;
+  color: #cab399;
+}
+
+#about-content .jobs .sm-line {
+  border-bottom: 1px solid #777777;
+  width: 50%;
+  margin: auto;
 }
 
 #about-content #job1 {
