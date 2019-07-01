@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,7 +10,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Bree Serif', serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
 }
 
@@ -22,33 +23,36 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3,
+h4, h5, h6 {
   margin: 0;
   font-weight: 300;
+  font-family: 'Bree Serif', serif;
 }
 
-h1.lg-heading,
-h2.lg-heading,
-h3.lg-heading {
+h1.lg-heading, h2.lg-heading, h3.lg-heading,
+h4.lg-heading, h5.lg-heading, h6.lg-heading {
   font-size: 4rem;
 }
 
-h1.sm-heading,
-h2.sm-heading,
-h3.sm-heading {
+h1.sm-heading, h2.sm-heading, h3.sm-heading,
+h4.sm-heading, h5.sm-heading, h6.sm-heading {
   background: rgba(73, 73, 73, 0.5);
   font-size: 1.3em;
   padding: 0.2rem 1rem;
   margin-bottom: 2rem;
 }
 
+h1.job-date, h2.job-date, h3.job-date,
+h4.job-date, h5.job-date, h6.job-date {
+  text-align: center;
+}
+
 .text-secondary {
   color: #eece1a;
 }
 
-.section-header {
+.section-header:not(.no-margin) {
   text-align: center;
   border-top: 3px solid green;
   margin-top: 4vh;
