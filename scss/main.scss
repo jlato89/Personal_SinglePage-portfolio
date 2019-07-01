@@ -2,11 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import 'config';
 
-//* GLOBALS
-html {
-//   scroll-behavior: smooth;  //! may cause motion sickness
-}
-
+//* ~~~~~~~~~~ GLOBALS ~~~~~~~~~~
 * {
    box-sizing: border-box;
 }
@@ -63,7 +59,7 @@ h4,h5,h6 {
    @include background;
 }
 
-//* HEADER
+//* ~~~~~~~~~~ HEADER ~~~~~~~~~~
 header {
    background: lighten($primary-color, 10);
    display: flex;
@@ -115,7 +111,7 @@ header {
    }
 }
 
-//* HOME SECTION
+//* ~~~~~~~~~~ HOME SECTION ~~~~~~~~~~
 #home {
    position: relative;
    height: 96.6vh;
@@ -176,7 +172,7 @@ header {
    #job3 {grid-area: job3;}
 }
 
-//* MY WORK SECTION
+//* ~~~~~~~~~~ WORK SECTION ~~~~~~~~~~
 #work-content {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -234,7 +230,7 @@ header {
    }
 }
 
-//* CONTACT ME SECTION
+//* ~~~~~~~~~~ CONTACT SECTION ~~~~~~~~~~
 #contact-content {
    display: flex;
    flex-wrap: wrap;
@@ -279,12 +275,9 @@ header {
    }
 }
 
-//* FOOTER SECTION
+//* ~~~~~~~~~~ FOOTER SECTION ~~~~~~~~~~
 footer {
-   visibility: hidden; //! Hidden until it can be fixed to stay below content
-   position: relative;
-   bottom: 0;
-   width: 100%;
+   margin: 0 -4rem; // allows footer to breakout of container width
    background: darken($primary-color, 10);
    display: flex;
    justify-content: space-between;
