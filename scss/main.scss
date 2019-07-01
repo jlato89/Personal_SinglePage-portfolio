@@ -3,6 +3,10 @@
 @import 'config';
 
 //* GLOBALS
+html {
+//   scroll-behavior: smooth;  //! may cause motion sickness
+}
+
 * {
    box-sizing: border-box;
 }
