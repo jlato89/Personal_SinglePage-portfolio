@@ -47,12 +47,17 @@ h4.sm-heading, h5.sm-heading, h6.sm-heading {
   color: #eece1a;
 }
 
-.section-header:not(.no-margin) {
+.section-header {
   text-align: center;
   border-top: 3px solid #3c3c3c;
   width: 80%;
   margin: 0 auto;
   margin-top: 4vh;
+}
+
+.section-header.no-margin {
+  border: 0;
+  margin: 0 auto;
 }
 
 #bg-img#bg-img {
