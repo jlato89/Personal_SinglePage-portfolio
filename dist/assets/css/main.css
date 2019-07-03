@@ -116,6 +116,10 @@ header #main-nav ul {
   margin: 0;
 }
 
+header .menu-line {
+  border-right: 2px solid #444;
+}
+
 header .menu-btn {
   padding: 0 10px;
   text-transform: uppercase;
@@ -123,7 +127,6 @@ header .menu-btn {
 
 header .menu-btn:hover {
   color: #eece1a;
-  cursor: pointer;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
