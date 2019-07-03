@@ -57,7 +57,7 @@ h4.sm-heading, h5.sm-heading, h6.sm-heading {
 
 .section-header.no-margin {
   border: 0;
-  margin: 0 auto;
+  margin-top: 1vh;
 }
 
 #bg-img#bg-img {
@@ -313,6 +313,11 @@ header #icons a:hover {
   padding: 1.5rem;
   padding-top: .5rem;
   margin: 1rem 0;
+}
+
+#contact-content #form input:focus, #contact-content #form textarea:focus {
+  opacity: .8;
+  border: 3px solid #eece1a;
 }
 
 #contact-content #form h1 {
