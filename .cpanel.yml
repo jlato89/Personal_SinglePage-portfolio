@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/joshycqi/dev.joshlatour.com/
+    - export DEPLOYPATH=/home/joshycqi/public_html/
     - /bin/cp -R dist/* $DEPLOYPATH
