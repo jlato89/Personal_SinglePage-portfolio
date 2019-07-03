@@ -139,7 +139,7 @@ header {
    }
 }
 
-//* About Section
+//* ~~~~~~~~~~ ABOUT SECTION ~~~~~~~~~~
 #about-content {
    display: grid;
    grid-gap: 30px;
@@ -159,6 +159,10 @@ header {
 
    #bio {
       grid-area: bio;
+
+      h3 {
+         font-size: 1.3em;
+      }
    }
 
    .jobs {

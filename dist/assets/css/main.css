@@ -191,6 +191,10 @@ header #icons a:hover {
   grid-area: bio;
 }
 
+#about-content #bio h3 {
+  font-size: 1.3em;
+}
+
 #about-content .jobs {
   background: #515151;
   padding: .5rem;
