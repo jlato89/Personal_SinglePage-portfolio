@@ -396,13 +396,13 @@ footer nav ul {
 
 @media screen and (max-width: 500px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
   main {
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
   }
   header .menu-btn {
-    padding: 0 5px;
+    padding: 0 3px;
   }
   header .menu-btn:hover {
     color: unset;
@@ -432,9 +432,13 @@ footer nav ul {
         grid-template-columns: 1fr;
     grid-gap: 1rem;
   }
+  #work-content .item {
+    max-width: 80vw;
+  }
   footer {
     height: 30px;
-    margin: 0 -1rem;
+    width: 100vw;
+    margin-left: -2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

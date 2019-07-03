@@ -17,16 +17,16 @@
 @include mediaSm {
    //Globals
    html {
-      font-size: 10px;
+      font-size: 12px;
    }
    main {
-      padding: 1rem 1rem;
+      padding: 1rem 2rem;
    }
 
    // Header
    header {
       .menu-btn {
-         padding: 0 5px;
+         padding: 0 3px;
          
          &:hover {
             color: unset;
@@ -68,10 +68,15 @@
    #work-content {
       grid-template-columns: 1fr;
       grid-gap: 1rem;
+
+      .item {
+         max-width: 80vw;
+      }
    }
    //footer
    footer {
       height: 30px;
-      margin: 0 -1rem;
+      width: 100vw;
+      margin-left: -2rem;
    }
 }

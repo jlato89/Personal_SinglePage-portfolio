@@ -295,6 +295,7 @@ header {
 
 //* ~~~~~~~~~~ FOOTER SECTION ~~~~~~~~~~
 footer {
+   // width: 80vw;
    margin: 0 -4rem; // allows footer to breakout of container width
    background: darken($primary-color, 10);
    display: flex;
