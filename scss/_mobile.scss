@@ -1,0 +1,73 @@
+//* Widescreens
+@include mediaXl {
+
+}
+
+//* Desktops & Laptops
+@include mediaLg {
+
+}
+
+//* Tablets & Netbooks
+@include mediaMd {
+
+}
+
+//* Phones
+@include mediaSm {
+   //Globals
+   html {
+      font-size: 10px;
+   }
+   main {
+      padding: 1rem 1rem;
+   }
+
+   // Header
+   header {
+      .menu-btn {
+         margin: 0 5px;
+      }
+      #icons {
+         display: none;
+      }
+   }
+
+   // Home
+   #home-header {
+      text-align: center;
+
+
+      .lg-heading {
+         font-size: 5rem;
+         margin-bottom: 1rem;
+      }
+   }
+   // About
+   #about-content {
+      grid-template-areas:
+      'bio-img'
+      'bio'
+      'job1'
+      'job2'
+      'job3';
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+
+      #bio-logo {
+         width: 100px;
+         height: 100px;
+      }
+   }
+
+   // Work
+   #work-content {
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+   }
+   //footer
+   footer {
+      height: 30px;
+      margin: 0 -1rem;
+   }
+}
