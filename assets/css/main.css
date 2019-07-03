@@ -97,7 +97,7 @@ header {
   z-index: 3;
 }
 
-header div {
+header div, header nav {
   padding: 0 1rem;
 }
 
