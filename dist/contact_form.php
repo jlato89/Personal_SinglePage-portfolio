@@ -8,7 +8,7 @@ $contact = $_POST['message1'];
 $email = filter_var($email, FILTER_SANITIZE_EMAIL); // Sanitizing E-mail.
 // After sanitization Validation is performed
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-if (!preg_match("/^[0-9]{10}$/", $contact)) {
+if (!preg_match("/^[0-9]{10}$/", $phone)) {
 echo "<span>* Please Fill Valid Contact No. *</span>";
 } else {
 $subject = $name;
