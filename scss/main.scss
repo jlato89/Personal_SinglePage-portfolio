@@ -56,7 +56,7 @@ h4,h5,h6 {
 
    &.no-margin {
       border: 0;
-      margin: 0 auto;
+      margin-top: 1vh;
    }
 }
 
@@ -258,6 +258,11 @@ header {
       padding: 1.5rem;
       padding-top: .5rem;
       margin: 1rem 0;
+
+      input:focus, textarea:focus {
+         opacity: .8;
+         border: 3px solid $secondary-color;
+      }
 
       h1 {
          text-align: center;
