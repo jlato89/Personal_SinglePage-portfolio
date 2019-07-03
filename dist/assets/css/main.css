@@ -117,7 +117,7 @@ header #main-nav ul {
 }
 
 header .menu-btn {
-  margin: 0 10px;
+  padding: 0 10px;
   text-transform: uppercase;
 }
 
@@ -230,14 +230,15 @@ header #icons a:hover {
 #work-content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.6rem;
 }
 
 #work-content .item {
   position: relative;
   width: 300px;
+  margin: 0 auto;
 }
 
 #work-content .overlay-text {
@@ -401,7 +402,10 @@ footer nav ul {
     padding: 1rem 1rem;
   }
   header .menu-btn {
-    margin: 0 5px;
+    padding: 0 5px;
+  }
+  header .menu-btn:hover {
+    color: unset;
   }
   header #icons {
     display: none;
