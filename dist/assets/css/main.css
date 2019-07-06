@@ -164,6 +164,11 @@ header #icons a:hover {
   margin-top: 20vh;
 }
 
+#home #home-content i {
+  color: white;
+  margin: 0 .25rem;
+}
+
 #about-content {
   display: -ms-grid;
   display: grid;
