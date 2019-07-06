@@ -26,7 +26,7 @@
    // Header
    header {
       .menu-btn {
-         padding: 0 3px;
+         padding: 0 5px;
          
          &:hover {
             color: unset;
@@ -46,6 +46,9 @@
          font-size: 5rem;
          margin-bottom: 1rem;
       }
+   }
+   #home-content {
+      text-align: center;
    }
    // About
    #about-content {

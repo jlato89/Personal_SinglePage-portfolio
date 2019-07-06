@@ -409,7 +409,7 @@ footer nav ul {
     padding: 1rem 2rem;
   }
   header .menu-btn {
-    padding: 0 3px;
+    padding: 0 5px;
   }
   header .menu-btn:hover {
     color: unset;
@@ -423,6 +423,9 @@ footer nav ul {
   #home-header .lg-heading {
     font-size: 5rem;
     margin-bottom: 1rem;
+  }
+  #home-content {
+    text-align: center;
   }
   #about-content {
         grid-template-areas: 'bio-img' 'bio' 'job1' 'job2' 'job3';
