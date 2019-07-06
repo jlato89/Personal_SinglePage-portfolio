@@ -1,2 +1,3 @@
-# my-template
-Just a basic template for repositories
+# my-Portfolio
+
+This is my live code for my portfolio deployed at http://joshlatour.com
