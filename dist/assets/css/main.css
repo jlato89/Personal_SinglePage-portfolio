@@ -160,6 +160,13 @@ header #icons a:hover {
   width: fit-content;
 }
 
+#home .pie {
+  background: url(../images/pie.png), url(../images/pie.png), url(../images/pie.png);
+  background-size: 100px 100px;
+  -webkit-transform: rotate(0deg), rotate(-120deg), rotate(120deg);
+          transform: rotate(0deg), rotate(-120deg), rotate(120deg);
+}
+
 #home #home-content {
   margin-top: 20vh;
 }
