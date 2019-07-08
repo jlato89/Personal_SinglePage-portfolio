@@ -165,8 +165,9 @@ header #icons a:hover {
 }
 
 #home #home-content i {
+  font-size: 3rem;
   color: white;
-  margin: 0 .25rem;
+  margin: 0 .5rem;
 }
 
 #about-content {
