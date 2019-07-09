@@ -69,7 +69,11 @@ h4.sm-heading, h5.sm-heading, h6.sm-heading {
 
 .section-header.no-margin {
   border: 0;
-  margin-top: 1vh;
+}
+
+.anchor {
+  padding-top: 10px;
+  margin-top: -10px;
 }
 
 #bg-img#bg-img {
