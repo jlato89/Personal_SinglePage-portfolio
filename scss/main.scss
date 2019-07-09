@@ -134,27 +134,23 @@ header {
       width: fit-content;
    }
 
-   .pie {
-      background: 
-      url(../images/pie.png), 
-      url(../images/pie.png), 
-      url(../images/pie.png);
-      background-size: 100px 100px;
-      transform: 
-      rotate(0deg), 
-      rotate(-120deg), 
-      rotate(120deg);
-      // width: 8%;
+   #pie-chart {
+      display: inline;
 
-      // &.pie-left {
-      //    transform: rotate(-120deg);
-      // }
-      // &.pie-right {
-      //    transform: rotate(120deg);
-      // }
-      // &.pie-bottom {
-      //    transform: rotate(0deg);
-      // }
+      .pie {
+         position: absolute;
+         width: 10%;
+        
+         &.pie-left {
+            transform: rotate(-120deg);
+         }
+         &.pie-right {
+            transform: rotate(120deg);
+         }
+         &.pie-bottom {
+            transform: rotate(0deg);
+         }
+      }
    }
 
    #home-content {

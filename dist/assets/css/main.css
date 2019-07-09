@@ -160,11 +160,28 @@ header #icons a:hover {
   width: fit-content;
 }
 
-#home .pie {
-  background: url(../images/pie.png), url(../images/pie.png), url(../images/pie.png);
-  background-size: 100px 100px;
-  -webkit-transform: rotate(0deg), rotate(-120deg), rotate(120deg);
-          transform: rotate(0deg), rotate(-120deg), rotate(120deg);
+#home #pie-chart {
+  display: inline;
+}
+
+#home #pie-chart .pie {
+  position: absolute;
+  width: 10%;
+}
+
+#home #pie-chart .pie.pie-left {
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
+}
+
+#home #pie-chart .pie.pie-right {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+#home #pie-chart .pie.pie-bottom {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 #home #home-content {
