@@ -17,7 +17,7 @@
 @include mediaSm {
    //Globals
    html {
-      font-size: 12px;
+      font-size: 14px;
    }
    main {
       padding: 1rem 2rem;
@@ -25,6 +25,9 @@
 
    // Header
    header {
+      #name {
+         font-size: 1.1rem;
+      }
       .menu-btn {
          padding: 0 5px;
          
@@ -43,13 +46,14 @@
 
 
       .lg-heading {
-         font-size: 5rem;
+         font-size: 4rem;
          margin-bottom: 1rem;
       }
    }
    #home-content {
       text-align: center;
    }
+   
    // About
    #about-content {
       grid-template-areas:

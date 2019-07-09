@@ -50,7 +50,7 @@ h4.sm-heading, h5.sm-heading, h6.sm-heading {
 .section-header {
   text-align: center;
   border-top: 3px solid #3c3c3c;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 4vh;
 }
@@ -165,7 +165,7 @@ header #icons a:hover {
 }
 
 #home #home-content i {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: white;
   margin: 0 .5rem;
 }
@@ -316,7 +316,7 @@ header #icons a:hover {
 
 #contact-content .box {
   background: #6a6a6a;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -409,10 +409,13 @@ footer nav ul {
 
 @media screen and (max-width: 500px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
   main {
     padding: 1rem 2rem;
+  }
+  header #name {
+    font-size: 1.1rem;
   }
   header .menu-btn {
     padding: 0 5px;
@@ -427,7 +430,7 @@ footer nav ul {
     text-align: center;
   }
   #home-header .lg-heading {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
   }
   #home-content {
