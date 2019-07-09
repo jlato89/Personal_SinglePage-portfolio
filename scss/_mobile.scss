@@ -35,7 +35,7 @@
             color: unset;
          }
       }
-      #icons {
+      .social-icons {
          display: none;
       }
    }
@@ -53,7 +53,7 @@
    #home-content {
       text-align: center;
    }
-   
+
    // About
    #about-content {
       grid-template-areas:
@@ -81,10 +81,14 @@
          max-width: 250px;
       }
    }
+   
    //footer
    footer {
-      height: 30px;
       width: 100vw;
       margin-left: -2rem;
+
+      .social-icons {
+         visibility: visible;
+      }
    }
 }

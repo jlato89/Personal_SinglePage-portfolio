@@ -43,6 +43,18 @@ h4.sm-heading, h5.sm-heading, h6.sm-heading {
   margin-bottom: 2rem;
 }
 
+.social-icons a {
+  color: white;
+  margin: 0 2px;
+  font-size: .9rem;
+}
+
+.social-icons a:hover {
+  color: #eece1a;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
 .text-secondary {
   color: #eece1a;
 }
@@ -94,11 +106,8 @@ header {
   top: 0;
   height: 35px;
   width: 100%;
+  padding: .5rem 1rem;
   z-index: 3;
-}
-
-header div, header nav {
-  padding: 0 1rem;
 }
 
 header #name {
@@ -126,18 +135,6 @@ header .menu-btn {
 }
 
 header .menu-btn:hover {
-  color: #eece1a;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-
-header #icons a {
-  color: white;
-  margin: 0 2px;
-  font-size: .9rem;
-}
-
-header #icons a:hover {
   color: #eece1a;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -362,38 +359,29 @@ header #icons a:hover {
 }
 
 footer {
-  margin: 0 -4rem;
   background: #2b2b2b;
+  font-family: sans-serif;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: sans-serif;
-  color: #fff;
-  height: 50px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: .5rem 1rem;
+  margin: 0 -4rem;
 }
 
-footer .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  padding: 0 1rem;
-}
-
-footer .navbar li {
-  margin: auto 0.5rem;
-}
-
-footer .navbar li a:hover {
-  color: #000;
+footer .social-icons {
+  visibility: hidden;
 }
 
 footer .copyright {
   font-size: 0.8rem;
-  margin: auto 1rem;
+  margin: auto 0;
 }
 
 footer nav {
@@ -423,7 +411,7 @@ footer nav ul {
   header .menu-btn:hover {
     color: unset;
   }
-  header #icons {
+  header .social-icons {
     display: none;
   }
   #home-header {
@@ -456,9 +444,11 @@ footer nav ul {
     max-width: 250px;
   }
   footer {
-    height: 30px;
     width: 100vw;
     margin-left: -2rem;
+  }
+  footer .social-icons {
+    visibility: visible;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -43,6 +43,17 @@ h4,h5,h6 {
    }
 }
 
+.social-icons a {
+   color: white;
+   margin: 0 2px;
+   font-size: .9rem;
+
+   &:hover {
+      color: $secondary-color;
+      @include easeOut;
+   }
+}
+
 .text-secondary {
    color: $secondary-color;
 }
@@ -74,11 +85,8 @@ header {
    top: 0;
    height: 35px;
    width: 100%;
+   padding: .5rem 1rem;
    z-index: 3;
-
-   div, nav{
-   padding: 0 1rem;
-   }
 
    #name {
       font-size: 1.4rem;
@@ -101,17 +109,6 @@ header {
    .menu-btn {
       padding: 0 10px;
       text-transform: uppercase;
-
-      &:hover {
-         color: $secondary-color;
-         @include easeOut;
-      }
-   }
-
-   #icons a {
-      color: white;
-      margin: 0 2px;
-      font-size: .9rem;
 
       &:hover {
          color: $secondary-color;
@@ -309,31 +306,22 @@ header {
 //* ~~~~~~~~~~ FOOTER SECTION ~~~~~~~~~~
 footer {
    // width: 80vw;
-   margin: 0 -4rem; // allows footer to breakout of container width
    background: darken($primary-color, 10);
-   display: flex;
-   justify-content: space-between;
    font-family: sans-serif;
    color: set-text-color($primary-color);
-   height: 50px;
+   display: flex;
+   justify-content: space-between;
+   height: fit-content;
+   padding: .5rem 1rem;
+   margin: 0 -4rem; // allows footer to breakout of container width
 
-   .navbar {
-      display: flex;
-      list-style: none;
-      padding: 0 1rem;
-
-      li {
-         margin: auto 0.5rem;
-
-         a:hover {
-            color: set-text-color($secondary-color);
-         }
-      }
+   .social-icons {
+      visibility: hidden;
    }
 
    .copyright {
       font-size: 0.8rem;
-      margin: auto 1rem
+      margin: auto 0
    }
 
    // Footers bottom margin fix
