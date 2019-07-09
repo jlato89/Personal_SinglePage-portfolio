@@ -449,7 +449,8 @@ footer nav ul {
     grid-gap: 1rem;
   }
   #work-content .item {
-    max-width: 80vw;
+    width: 75vw;
+    max-width: 250px;
   }
   footer {
     height: 30px;
