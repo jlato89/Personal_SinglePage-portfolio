@@ -299,6 +299,11 @@ header .menu-btn:hover {
   color: #333;
 }
 
+#project-content .btn.inactive {
+  background: #5e5e5e;
+  pointer-events: none;
+}
+
 #project-content .btn:hover {
   background: #eece1a;
   color: #000;
