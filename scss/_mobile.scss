@@ -10,12 +10,26 @@
 
 //* Tablets & Netbooks
 @include mediaMd {
+   // Globals
+   main {
+      padding: 1rem 2rem;
+   }
+
+   // Footer
+   footer {
+      width: 100vw;
+      margin-left: -2rem;
+
+      .social-icons {
+         visibility: visible;
+      }
+   }
 
 }
 
 //* Phones
 @include mediaSm {
-   //Globals
+   // Globals
    html {
       font-size: 14px;
    }

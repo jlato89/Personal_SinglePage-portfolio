@@ -32,7 +32,7 @@ h4,h5,h6 {
    font-family: 'Bree Serif', serif;
 
    &.lg-heading {
-      font-size: 4rem;
+      font-size: 3.8rem;
    }
    &.sm-heading {
       background: rgba(lighten($primary-color, 2), 0.5);
@@ -276,44 +276,44 @@ header {
       margin: 0.5rem 1.5rem;
    }
 
-   //    Contact Form
-   #form {
-      background: lighten($primary-color, 15);
-      width: 600px;
-      height: fit-content;
-      padding: 1.5rem;
-      padding-top: .5rem;
-      margin: 1rem 0;
+}
+// Contact Form
+#form {
+   background: lighten($primary-color, 15);
+   width: 600px;
+   height: fit-content;
+   padding: 1.5rem;
+   padding-top: .5rem;
+   margin: 1rem auto;
 
-      input:focus, textarea:focus {
-         opacity: .8;
-         border: 1px solid $secondary-color;
-      }
+   input:focus, textarea:focus {
+      opacity: .8;
+      border: 1px solid $secondary-color;
+   }
 
-      h1 {
-         text-align: center;
-         margin-bottom: 10px;
-      }
-      #form-name,
-      #form-email,
-      #form-phone,
-      #form-company {
-         width: 100%;
-         height: 30px;
-         margin-bottom: 10px;
-      }
-               
-      #form-message {
-         width: 100%;
-         height: 20vh;
-         margin-bottom: 5px;
-      }
+   h1 {
+      text-align: center;
+      margin-bottom: 10px;
+   }
+   #form-name,
+   #form-email,
+   #form-phone,
+   #form-company {
+      width: 100%;
+      height: 30px;
+      margin-bottom: 10px;
+   }
+            
+   #form-message {
+      width: 100%;
+      height: 20vh;
+      margin-bottom: 5px;
    }
 }
 
 //* ~~~~~~~~~~ FOOTER SECTION ~~~~~~~~~~
 footer {
-   // width: 80vw;
+   // width: 100vw;
    background: darken($primary-color, 10);
    font-family: sans-serif;
    color: set-text-color($primary-color);
@@ -332,15 +332,15 @@ footer {
       margin: auto 0
    }
 
-   // Footers bottom margin fix
-   nav {
-      margin: auto 0;
+   // // Footers bottom margin fix
+   // nav {
+   //    margin: auto 0;
 
-      ul {
-         margin-block-end: 0;
-         margin-block-start: 0;
-      }
-   }
+   //    ul {
+   //       margin-block-end: 0;
+   //       margin-block-start: 0;
+   //    }
+   // }
 }
 
 //! import mobile file last
