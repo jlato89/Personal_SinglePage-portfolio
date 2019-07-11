@@ -228,11 +228,11 @@ header {
       height: 25vh;
       border: 3px solid #fff;
 
-      &:hover {
-         opacity: 0.5;
-         border: 3px solid $secondary-color;
-         @include easeOut;
-      }
+      // &:hover {
+      //    opacity: 0.5;
+      //    border: 3px solid $secondary-color;
+      //    @include easeOut;
+      // }
    }
 
    .btn {
