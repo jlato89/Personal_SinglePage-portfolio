@@ -275,13 +275,6 @@ header .menu-btn:hover {
   border: 3px solid #fff;
 }
 
-#project-content img:hover {
-  opacity: 0.5;
-  border: 3px solid #eece1a;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-
 #project-content .btn {
   display: block;
   text-align: center;
