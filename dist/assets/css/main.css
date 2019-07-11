@@ -251,7 +251,7 @@ header .menu-btn:hover {
 
 #work-content .work-item {
   position: relative;
-  max-width: 30vw;
+  width: 27vw;
   margin: 0 auto;
 }
 
