@@ -32,7 +32,7 @@ h4, h5, h6 {
 
 h1.lg-heading, h2.lg-heading, h3.lg-heading,
 h4.lg-heading, h5.lg-heading, h6.lg-heading {
-  font-size: 4rem;
+  font-size: 3.8rem;
 }
 
 h1.sm-heading, h2.sm-heading, h3.sm-heading,
@@ -331,7 +331,7 @@ header .menu-btn:hover {
   margin: 0.5rem 1.5rem;
 }
 
-#contact-content #form {
+#form {
   background: #6a6a6a;
   width: 600px;
   height: -webkit-fit-content;
@@ -339,29 +339,29 @@ header .menu-btn:hover {
   height: fit-content;
   padding: 1.5rem;
   padding-top: .5rem;
-  margin: 1rem 0;
+  margin: 1rem auto;
 }
 
-#contact-content #form input:focus, #contact-content #form textarea:focus {
+#form input:focus, #form textarea:focus {
   opacity: .8;
   border: 1px solid #eece1a;
 }
 
-#contact-content #form h1 {
+#form h1 {
   text-align: center;
   margin-bottom: 10px;
 }
 
-#contact-content #form #form-name,
-#contact-content #form #form-email,
-#contact-content #form #form-phone,
-#contact-content #form #form-company {
+#form #form-name,
+#form #form-email,
+#form #form-phone,
+#form #form-company {
   width: 100%;
   height: 30px;
   margin-bottom: 10px;
 }
 
-#contact-content #form #form-message {
+#form #form-message {
   width: 100%;
   height: 20vh;
   margin-bottom: 5px;
@@ -393,15 +393,17 @@ footer .copyright {
   margin: auto 0;
 }
 
-footer nav {
-  margin: auto 0;
-}
-
-footer nav ul {
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
+@media screen and (max-width: 768px) {
+  main {
+    padding: 1rem 2rem;
+  }
+  footer {
+    width: 100vw;
+    margin-left: -2rem;
+  }
+  footer .social-icons {
+    visibility: visible;
+  }
 }
 
 @media screen and (max-width: 500px) {
