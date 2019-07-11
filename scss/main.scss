@@ -198,12 +198,12 @@ header {
 }
 
 //* ~~~~~~~~~~ WORK SECTION ~~~~~~~~~~
-#work-content {
+#project-content {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 0.6rem;
 
-   .work-item {
+   .project-item {
       position: relative;
       width: 27vw;
       margin: 0 auto;

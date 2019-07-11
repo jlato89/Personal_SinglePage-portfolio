@@ -73,11 +73,11 @@
    }
 
    // Work
-   #work-content {
+   #project-content {
       grid-template-columns: 1fr;
       grid-gap: 1rem;
 
-      .work-item {
+      .project-item {
          width: 75vw;
          max-width: 250px;
       }
