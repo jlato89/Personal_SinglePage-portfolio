@@ -249,9 +249,9 @@ header .menu-btn:hover {
   grid-gap: 0.6rem;
 }
 
-#work-content .item {
+#work-content .work-item {
   position: relative;
-  width: 25vw;
+  max-width: 30vw;
   margin: 0 auto;
 }
 
@@ -443,7 +443,7 @@ footer nav ul {
         grid-template-columns: 1fr;
     grid-gap: 1rem;
   }
-  #work-content .item {
+  #work-content .work-item {
     width: 75vw;
     max-width: 250px;
   }
