@@ -249,6 +249,10 @@ header {
          background: lighten($primary-color, 50);
          color: #333;
       }
+      &.inactive {
+         background: lighten($primary-color, 10);
+         pointer-events: none;
+      }
 
       &:hover {
          background: $secondary-color;
