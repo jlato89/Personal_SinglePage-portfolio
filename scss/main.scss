@@ -203,9 +203,9 @@ header {
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 0.6rem;
 
-   .item {
+   .work-item {
       position: relative;
-      width: 25vw;
+      max-width: 30vw;
       margin: 0 auto;
    }
 
