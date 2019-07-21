@@ -199,53 +199,61 @@ header {
 
 //* ~~~~~~~~~~ WORK SECTION ~~~~~~~~~~
 #project-content {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-gap: 0.6rem;
 
    .project-item {
-      position: relative;
-      width: 27vw;
-      margin: 0 auto;
+      display: grid;
+      grid-template-areas:
+         'img img title title'
+         'img img desc desc'
+         'img img btn1 btn2';
+      grid-template-rows: max-content;
+      border: 1px solid white;
+
+      &:nth-child(even) {
+         grid-template-areas:
+            'title title img img'
+            'desc desc img img'
+            'btn1 btn2 img img';
+
+         .project-title {
+            justify-self: start;
+         }
+      }
    }
 
-   .overlay-text {
-      background: #444;
-      position: absolute;
-      font-family: sans-serif;
-      color: white;
-      text-align: center;
-      width: 98%;
-      bottom: 40%;
-      left: 2px;
-      opacity: 0.7;
-      padding: 0.5rem 0;
-      z-index: 2;
+   .project-title {
+      grid-area: title;
+      justify-self: end;
+      color: $secondary-color;
+      height: fit-content;
+      padding: .4rem 1rem;
    }
 
    img {
+      grid-area: img;
       width: 100%;
-      height: 25vh;
-      border: 3px solid #fff;
+   }
 
-      // &:hover {
-      //    opacity: 0.5;
-      //    border: 3px solid $secondary-color;
-      //    @include easeOut;
-      // }
+   .project-desc {
+      grid-area: desc;
+      padding: 0 2%;
+      margin: 0;
    }
 
    .btn {
-      display: block;
+      grid-area: btn;
+      align-self: end;
       text-align: center;
+      height: fit-content;
       padding: 0.3rem 1rem;
-      margin-bottom: 0.3rem;
 
       &.btn-dark {
+         grid-area: btn1;
          background: darken($primary-color, 50);
          color: #fff;
       }
       &.btn-light {
+         grid-area: btn2;
          background: lighten($primary-color, 50);
          color: #333;
       }
@@ -253,7 +261,6 @@ header {
          background: lighten($primary-color, 10);
          pointer-events: none;
       }
-
       &:hover {
          background: $secondary-color;
          color: set-text-color($secondary-color);
@@ -280,7 +287,7 @@ header {
 // Contact Form
 #form {
    background: lighten($primary-color, 15);
-   width: 600px;
+   max-width: 600px;
    height: fit-content;
    padding: 1.5rem;
    padding-top: .5rem;

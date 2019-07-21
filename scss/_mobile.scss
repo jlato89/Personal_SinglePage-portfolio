@@ -1,10 +1,17 @@
 //* Widescreens
 @include mediaXl {
-
+   // Globals
+   html {
+      font-size: 22px;
+   }
 }
 
 //* Desktops & Laptops
 @include mediaLg {
+   // Globals
+   html {
+      font-size: 18px;
+   }
 
 }
 
@@ -88,12 +95,23 @@
 
    // Work
    #project-content {
-      grid-template-columns: 1fr;
-      grid-gap: 1rem;
 
       .project-item {
-         width: 75vw;
-         max-width: 250px;
+         grid-template-areas:
+            'title title'
+            'img img'
+            'desc desc'
+            'btn1 btn2' !important;
+         grid-template-rows: auto;
+         margin-bottom: 10px;
+      }
+      
+      .project-title {
+         justify-self: center !important;
+      }
+
+      .project-desc {
+         padding: .5rem
       }
    }
    
