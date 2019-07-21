@@ -1,10 +1,17 @@
 //* Widescreens
 @include mediaXl {
-
+   // Globals
+   html {
+      font-size: 22px;
+   }
 }
 
 //* Desktops & Laptops
 @include mediaLg {
+   // Globals
+   html {
+      font-size: 18px;
+   }
 
 }
 

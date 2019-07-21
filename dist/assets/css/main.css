@@ -414,6 +414,18 @@ footer .copyright {
   margin: auto 0;
 }
 
+@media screen and (min-width: 1171px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  html {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   main {
     padding: 1rem 2rem;
