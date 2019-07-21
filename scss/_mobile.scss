@@ -94,14 +94,13 @@
             'title title'
             'img img'
             'desc desc'
-            'github project' !important;
+            'btn1 btn2' !important;
          grid-template-rows: auto;
          margin-bottom: 10px;
       }
       
       .project-title {
          justify-self: center !important;
-         padding: .3rem 0;
       }
 
       .project-desc {

@@ -205,15 +205,15 @@ header {
       grid-template-areas:
          'img img title title'
          'img img desc desc'
-         'img img github project';
-      grid-template-rows: 15% auto 15%;
+         'img img btn1 btn2';
+      grid-template-rows: max-content;
       border: 1px solid white;
 
       &:nth-child(even) {
          grid-template-areas:
             'title title img img'
             'desc desc img img'
-            'github project img img';
+            'btn1 btn2 img img';
 
          .project-title {
             justify-self: start;
@@ -226,7 +226,7 @@ header {
       justify-self: end;
       color: $secondary-color;
       height: fit-content;
-      padding: 0 1rem;
+      padding: .4rem 1rem;
    }
 
    img {
@@ -241,16 +241,19 @@ header {
    }
 
    .btn {
+      grid-area: btn;
       align-self: end;
       text-align: center;
       height: fit-content;
       padding: 0.3rem 1rem;
 
       &.btn-dark {
+         grid-area: btn1;
          background: darken($primary-color, 50);
          color: #fff;
       }
       &.btn-light {
+         grid-area: btn2;
          background: lighten($primary-color, 50);
          color: #333;
       }
