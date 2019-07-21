@@ -106,11 +106,11 @@ header {
       margin: 0;
    }
    
-   .menu-line {
+   .nav-line {
       border-right: 2px solid $primary-color;
    }
    
-   .menu-btn {
+   .nav-btn {
       padding: 0 10px;
       text-transform: uppercase;
 
@@ -223,10 +223,11 @@ header {
 
    .project-title {
       grid-area: title;
+      font-size: 1.2rem;
       justify-self: end;
       color: $secondary-color;
       height: fit-content;
-      padding: .4rem 1rem;
+      padding: .2rem 1rem;
    }
 
    img {
@@ -236,7 +237,9 @@ header {
 
    .project-desc {
       grid-area: desc;
-      padding: 0 2%;
+      font-size: .8rem;
+      text-align: justify;
+      padding: .5rem;
       margin: 0;
    }
 

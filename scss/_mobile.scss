@@ -2,9 +2,8 @@
 @include mediaXl {
    // Globals
    html {
-      font-size: 22px;
+      font-size: 20px;
    }
-   
    main {
       padding: 2rem 8rem;
    }
@@ -24,16 +23,61 @@
    html {
       font-size: 18px;
    }
-
 }
 
 //* Tablets & Netbooks
 @include mediaMd {
    // Globals
+   html {
+      font-size: 16px;
+   }
    main {
       padding: 1rem 2rem;
    }
 
+   // Header
+   header {
+      #name {
+         font-size: 1.1rem;
+      }
+      .nav-btn {
+         padding: 0 5px;
+         
+         &:hover {
+            color: unset;
+         }
+      }
+         .social-icons {
+            display: none;
+      }
+   }
+
+   #home-header {
+
+      .lg-heading {
+         font-size: 5.2rem;
+         margin-bottom: 1rem;
+      }
+   }
+
+   // About Section
+   #about-content {
+      grid-gap: 1rem;
+      grid-template-areas:
+         'bio-img bio bio'
+         'job1 job1 job1'
+         'job2 job2 job2'
+         'job3 job3 job3';
+      grid-template-columns: repeat(3, 1fr);
+
+      #bio-logo {
+         width: 100%;
+         height: auto;
+      }
+      .jobs p {
+         font-size: .9rem;
+      }
+   }
    // Footer
    footer {
       width: 100vw;
@@ -61,7 +105,7 @@
       #name {
          font-size: 1.1rem;
       }
-      .menu-btn {
+      .nav-btn {
          padding: 0 5px;
          
          &:hover {
@@ -76,7 +120,6 @@
    // Home
    #home-header {
       text-align: center;
-
 
       .lg-heading {
          font-size: 4rem;
@@ -96,7 +139,6 @@
       'job2'
       'job3';
       grid-template-columns: 1fr;
-      grid-gap: 1rem;
 
       #bio-logo {
          // display: none;
@@ -120,6 +162,14 @@
       
       .project-title {
          justify-self: center !important;
+         font-size: 1.7rem;
+         padding: .5rem
+      }
+
+      img {
+      grid-area: img;
+      width: 70%;
+      margin: 0 auto;
       }
 
       .project-desc {
