@@ -241,45 +241,65 @@ header .menu-btn:hover {
   grid-area: job3;
 }
 
-#project-content {
+#project-content .project-item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.6rem;
+      grid-template-areas: 'img img title title' 'img img desc desc' 'img img github project';
+  -ms-grid-rows: 15% auto 15%;
+      grid-template-rows: 15% auto 15%;
+  border: 1px solid white;
 }
 
-#project-content .project-item {
-  position: relative;
-  width: 27vw;
-  margin: 0 auto;
+#project-content .project-item:nth-child(even) {
+      grid-template-areas: 'title title img img' 'desc desc img img' 'github project img img';
 }
 
-#project-content .overlay-text {
-  background: #444;
-  position: absolute;
-  font-family: sans-serif;
-  color: white;
-  text-align: center;
-  width: 98%;
-  bottom: 40%;
-  left: 2px;
-  opacity: 0.7;
-  padding: 0.5rem 0;
-  z-index: 2;
+#project-content .project-item:nth-child(even) .project-title {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+#project-content .project-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  color: #eece1a;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 1rem;
 }
 
 #project-content img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: img;
   width: 100%;
-  height: 25vh;
-  border: 3px solid #fff;
+}
+
+#project-content .project-desc {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: desc;
+  padding: 0 2%;
+  margin: 0;
 }
 
 #project-content .btn {
-  display: block;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
   text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 0.3rem 1rem;
-  margin-bottom: 0.3rem;
 }
 
 #project-content .btn.btn-dark {
