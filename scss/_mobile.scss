@@ -11,8 +11,14 @@
    // Project Section
    #project-content {
 
+      .project-title {
+         font-size: 2rem;
+      }
       img {
          width: 25vw;
+      }
+      .project-desc {
+         font-size: 1rem;
       }
    }
 }
@@ -22,6 +28,17 @@
    // Globals
    html {
       font-size: 18px;
+   }
+
+   // Project Section
+   #project-content {
+
+      img {
+         width: 30vw;
+      }
+      .project-desc {
+         font-size: .9rem;
+      }
    }
 }
 
@@ -78,6 +95,7 @@
          font-size: .9rem;
       }
    }
+
    // Footer
    footer {
       width: 100vw;
@@ -159,19 +177,16 @@
          grid-template-rows: auto;
          margin-bottom: 10px;
       }
-      
       .project-title {
          justify-self: center !important;
          font-size: 1.7rem;
          padding: .5rem
       }
-
       img {
       grid-area: img;
       width: 70%;
       margin: 0 auto;
       }
-
       .project-desc {
          padding: .5rem
       }
