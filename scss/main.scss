@@ -199,24 +199,21 @@ header {
 
 //* ~~~~~~~~~~ WORK SECTION ~~~~~~~~~~
 #project-content {
-   // display: grid;
-   // grid-template-columns: repeat(3, 1fr);
-   // grid-gap: 0.6rem;
 
    .project-item {
       display: grid;
       grid-template-areas:
-      'img img title title'
-      'img img desc desc'
-      'img img github project';
+         'img img title title'
+         'img img desc desc'
+         'img img github project';
       grid-template-rows: 15% auto 15%;
       border: 1px solid white;
 
       &:nth-child(even) {
          grid-template-areas:
-         'title title img img'
-         'desc desc img img'
-         'github project img img';
+            'title title img img'
+            'desc desc img img'
+            'github project img img';
 
          .project-title {
             justify-self: start;
