@@ -424,14 +424,26 @@ footer .copyright {
   main {
     padding: 2rem 8rem;
   }
+  #project-content .project-title {
+    font-size: 2rem;
+  }
   #project-content img {
     width: 25vw;
+  }
+  #project-content .project-desc {
+    font-size: 1rem;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   html {
     font-size: 18px;
+  }
+  #project-content img {
+    width: 30vw;
+  }
+  #project-content .project-desc {
+    font-size: .9rem;
   }
 }
 
