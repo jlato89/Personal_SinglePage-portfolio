@@ -458,14 +458,19 @@ footer .copyright {
     width: 100px;
     height: 100px;
   }
-  #project-content {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-gap: 1rem;
-  }
   #project-content .project-item {
-    width: 75vw;
-    max-width: 250px;
+        grid-template-areas: 'title title' 'img img' 'desc desc' 'github project' !important;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    margin-bottom: 10px;
+  }
+  #project-content .project-title {
+    -ms-grid-column-align: center !important;
+        justify-self: center !important;
+    padding: .3rem 0;
+  }
+  #project-content .project-desc {
+    padding: .5rem;
   }
   footer {
     width: 100vw;
