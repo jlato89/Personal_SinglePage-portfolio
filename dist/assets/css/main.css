@@ -245,9 +245,9 @@ header .menu-btn:hover {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'img img title title' 'img img desc desc' 'img img btn1 btn2';
-  -ms-grid-rows: max-content;
-      grid-template-rows: -webkit-max-content;
-      grid-template-rows: max-content;
+  -ms-grid-rows: max-content auto max-content;
+      grid-template-rows: -webkit-max-content auto -webkit-max-content;
+      grid-template-rows: max-content auto max-content;
   border: 1px solid white;
 }
 
@@ -417,6 +417,12 @@ footer .copyright {
 @media screen and (min-width: 1171px) {
   html {
     font-size: 22px;
+  }
+  main {
+    padding: 2rem 8rem;
+  }
+  #project-content img {
+    width: 25vw;
   }
 }
 

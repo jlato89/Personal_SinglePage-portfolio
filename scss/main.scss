@@ -206,7 +206,7 @@ header {
          'img img title title'
          'img img desc desc'
          'img img btn1 btn2';
-      grid-template-rows: max-content;
+      grid-template-rows: max-content auto max-content;
       border: 1px solid white;
 
       &:nth-child(even) {
