@@ -346,7 +346,7 @@ header .menu-btn:hover {
 
 #form {
   background: #6a6a6a;
-  width: 600px;
+  max-width: 600px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

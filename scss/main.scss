@@ -287,7 +287,7 @@ header {
 // Contact Form
 #form {
    background: lighten($primary-color, 15);
-   width: 600px;
+   max-width: 600px;
    height: fit-content;
    padding: 1.5rem;
    padding-top: .5rem;
