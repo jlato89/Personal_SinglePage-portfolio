@@ -171,6 +171,7 @@
       .project-item {
          grid-template-areas:
             'title title'
+            'tech tech'
             'img img'
             'desc desc'
             'btn1 btn2' !important;
@@ -181,6 +182,10 @@
          justify-self: center !important;
          font-size: 1.7rem;
          padding: .5rem
+      }
+      .project-tech {
+         justify-self: center !important;
+         margin-top: 0;
       }
       img {
       grid-area: img;

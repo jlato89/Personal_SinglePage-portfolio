@@ -244,15 +244,25 @@ header .nav-btn:hover {
 #project-content .project-item {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'img img title title' 'img img desc desc' 'img img btn1 btn2';
+      grid-template-areas: 'img img tech title' 'img img desc desc' 'img img btn1 btn2';
   -ms-grid-rows: max-content auto max-content;
       grid-template-rows: -webkit-max-content auto -webkit-max-content;
       grid-template-rows: max-content auto max-content;
   border: 1px solid white;
 }
 
+#project-content .project-item .project-title {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+#project-content .project-item .project-tech {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
 #project-content .project-item:nth-child(even) {
-      grid-template-areas: 'title title img img' 'desc desc img img' 'btn1 btn2 img img';
+      grid-template-areas: 'title tech img img' 'desc desc img img' 'btn1 btn2 img img';
 }
 
 #project-content .project-item:nth-child(even) .project-title {
@@ -260,14 +270,16 @@ header .nav-btn:hover {
       justify-self: start;
 }
 
+#project-content .project-item:nth-child(even) .project-tech {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
 #project-content .project-title {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: title;
   font-size: 1.2rem;
-  -ms-grid-column-align: end;
-      justify-self: end;
   color: #eece1a;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -293,6 +305,15 @@ header .nav-btn:hover {
   text-align: justify;
   padding: .5rem;
   margin: 0;
+}
+
+#project-content .project-tech {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: tech;
+  font-size: .7rem;
+  color: #ffd700;
+  padding: 0 1rem;
 }
 
 #project-content .btn {
@@ -531,7 +552,7 @@ footer .copyright {
     height: 100px;
   }
   #project-content .project-item {
-        grid-template-areas: 'title title' 'img img' 'desc desc' 'btn1 btn2' !important;
+        grid-template-areas: 'title title' 'tech tech' 'img img' 'desc desc' 'btn1 btn2' !important;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     margin-bottom: 10px;
@@ -542,8 +563,13 @@ footer .copyright {
     font-size: 1.7rem;
     padding: .5rem;
   }
+  #project-content .project-tech {
+    -ms-grid-column-align: center !important;
+        justify-self: center !important;
+    margin-top: 0;
+  }
   #project-content img {
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: img;
