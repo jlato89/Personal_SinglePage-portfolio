@@ -238,11 +238,18 @@ header {
       height: fit-content;
       padding: .2rem 1rem;
    }
+   
+   .project-tech {
+      grid-area: tech;
+      font-size: .7rem;
+      color: #ffd700;
+      padding: 0 1rem;
+   }
 
    img {
       grid-area: img;
       width: 100%;
-   }
+   }   
 
    .project-desc {
       grid-area: desc;
@@ -250,14 +257,7 @@ header {
       text-align: justify;
       padding: .5rem;
       margin: 0;
-   }
-
-   .project-tech {
-      grid-area: tech;
-      font-size: .7rem;
-      color: #ffd700;
-      padding: 0 1rem;
-   }
+   }   
 
    .btn {
       grid-area: btn;
